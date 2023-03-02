@@ -11,7 +11,7 @@ API_ID = int(os.getenv("API_ID"))
 API_HASH = os.getenv("API_HASH")
 PHONE = os.getenv("PHONE")
 SESSION_NAME = os.getenv("SESSION_NAME")
-MESSAGE = "Some message that i need to send"
+MESSAGE = os.getenv("MESSAGE")
 
 client = TelegramClient(SESSION_NAME, API_ID, API_HASH)
 
